@@ -6,7 +6,7 @@ const cors = require('cors');
 const User = require('../bot/models/User');
 
 const app = express();
-const port = 3001;
+const port = 80;
 
 app.use(cors());
 app.use(bodyParser.json());
