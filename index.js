@@ -8,7 +8,9 @@ const User = require('../bot/models/User');
 const app = express();
 const port = 80;
 
-app.use(cors());
+app.use(cors({
+    origin: '*',
+}));
 app.use(bodyParser.json());
 
 const userRouter = require('./routes/user');
